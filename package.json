@@ -1,5 +1,6 @@
 {
 	"author": "AnnDev",
+	"description": "FCC BackEnd Development Course - WebApp Project",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
