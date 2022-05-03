@@ -4,5 +4,6 @@ var bGround = require('fcc-express-bground');
 
 // (1) Meet the node console
 bGround.log('Hello World');
+console.log('Hello World');
 
 module.exports = app;
