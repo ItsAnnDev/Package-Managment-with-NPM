@@ -6,7 +6,6 @@
   'use strict';
 
   var bGround = require('fcc-express-bground');
-  var fs = require('fs');
   var myApp = require('./myApp');
   var express = require('express');
   var app = express();
@@ -56,6 +55,7 @@
   })
   
   //Listen on port set in environment variable or default to 3000
-  const listener = app.listen(process.env.PORT || 3000, function () {
-    console.log("Node.js listening on port " + listener.address().port);
+  var port = process.env.PORT || 3000;
+  const listener = app.listen(port, function () {
+    bGround.log('Node is listening on port '+ port + '...');
   });
